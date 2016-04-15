@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["adit.mahdar@gmail.com"]
   s.homepage    = "https://github.com/aditiamahdar/simple_enquiry"
   s.summary     = "Rails Gem to add simple enquiry feature for Active Record"
-  s.description = "Make us easier to add enquiry feature for our e-commerce or marketplace. It contain some functions such as: asking question for related item and owner can reply the message"
+  s.description = "Easier to add enquiry feature for e-commerce. It contain some functions such as: asking question for related item and owner can reply the message."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
