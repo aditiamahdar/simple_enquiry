@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enquiry_id: 
+  body: MyString
+  sender_id: 
+  sender_type: Sender
+
+two:
+  enquiry_id: 
+  body: MyString
+  sender_id: 
+  sender_type: Sender
