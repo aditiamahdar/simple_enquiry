@@ -9,6 +9,10 @@ module SimpleEnquiry
   def simple_enquiry_object
   end
 
+  # Owner of object
+  def simple_enquiry_owner
+  end
+
   def send_enquiry(object, body)
     enquiry = SimpleEnquiry::Enquiry.where(enquiry_params(self, object)).first_or_create
     enquiry.messages.create(message_params(self, body))
