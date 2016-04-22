@@ -1,18 +1,6 @@
 require 'simple_enquiry/engine'
 
 module SimpleEnquiry
-  # TODO define that model is sender of enquiry
-  def simple_enquiry_sender
-  end
-
-  # TODO define that model is object of enquiry
-  def simple_enquiry_object
-  end
-
-  # Owner of object
-  def simple_enquiry_owner
-  end
-
   def send_enquiry(object, body)
     enquiry = SimpleEnquiry::Enquiry.where(enquiry_params(self, object)).first_or_create
     enquiry.messages.create(message_params(self, body))
@@ -41,4 +29,14 @@ module SimpleEnquiry
     end
 
     private_class_method :enquiry_params, :message_params
+end
+
+class ActiveRecord::Base
+  # TODO define that model is sender of enquiry
+  def simple_enquiry_sender
+  end
+
+  # TODO define that model is object of enquiry
+  def simple_enquiry_object(opts)
+  end
 end
